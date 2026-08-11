@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<qserver
+    name="jpos-b-server"
+    logger="Q2">
+
+    <attr name="port" type="java.lang.Integer">10000</attr>
+
+    <channel
+        class="org.jpos.iso.channel.NACChannel"
+        packager="org.jpos.iso.packager.GenericPackager"
+        logger="Q2">
+
+        <property
+            name="packager-config"
+            value="cfg/iso87.xml"/>
+
+    </channel>
+
+    <request-listener
+        class="org.jpos.iso.IncomingListener"
+        logger="Q2"
+        realm="incoming">
+
+        <property name="queue" value="TXN"/>
+        <property name="timeout" value="30000"/>
+
+    </request-listener>
+
+</qserver>
