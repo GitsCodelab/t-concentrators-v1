@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel-adaptor name="smartvista-fe" logger="Q2">
+
+    <channel
+        class="org.jpos.iso.channel.NACChannel"
+        packager="org.jpos.iso.packager.GenericPackager"
+        logger="Q2">
+
+        <property
+            name="packager-config"
+            value="cfg/iso87.xml"/>
+
+        <property
+            name="host"
+            value="10.20.67.2"/>
+
+        <property
+            name="port"
+            value="17002"/>
+
+    </channel>
+
+    <in>jpos-a-to-sv-send</in>
+    <out>jpos-a-to-sv-receive</out>
+
+</channel-adaptor>

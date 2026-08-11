@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qbean
+    name="smartvista-test"
+    class="com.taly.concentrators.test.SmartVistaTestProducer"
+    logger="Q2"
+    realm="smartvista-test"/>
