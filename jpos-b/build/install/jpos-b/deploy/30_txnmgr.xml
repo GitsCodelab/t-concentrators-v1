@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
+<txnmgr
+    name="txnmgr"
+    class="org.jpos.transaction.TransactionManager"
+    logger="Q2">
+
+    <property name="queue" value="TXN"/>
+    <property name="sessions" value="1"/>
+    <property name="persistent-space" value=""/>
+
+    <participant
+        class="com.taly.concentrators.transaction.ValidationParticipant"
+        logger="Q2"
+        realm="validation"/>
+
+    <participant
+        class="com.taly.concentrators.transaction.ProcessingParticipant"
+        logger="Q2"
+        realm="processing"/>
+
+    <participant
+        class="org.jpos.transaction.participant.SendResponse"
+        logger="Q2"
+        realm="send-response"/>
+
+</txnmgr>
+
+<!-- 
 <txnmgr name="txnmgr"
         class="org.jpos.transaction.TransactionManager"
         logger="Q2">
@@ -19,4 +47,4 @@
         logger="Q2"
         realm="send-response"/>
 
-</txnmgr>
+</txnmgr> -->
