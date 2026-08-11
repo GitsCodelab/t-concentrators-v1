@@ -32,3 +32,9 @@ subprojects {
         distDir.set('src/dist')
     }
 }
+
+project(':jpos-b') {
+    dependencies {
+        implementation 'org.openjdk.nashorn:nashorn-core:15.7'
+    }
+}

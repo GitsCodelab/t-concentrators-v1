@@ -8,6 +8,15 @@
     <property name="sessions" value="1"/>
     <property name="persistent-space" value=""/>
 
+    <participant
+        class="org.jpos.transaction.participant.JSParticipant"
+        logger="Q2"
+        realm="approve"
+        src="cfg/approve.js"/>
+
+    <participant
+        class="org.jpos.transaction.participant.SendResponse"
+        logger="Q2"
+        realm="send-response"/>
+
 </txnmgr>
-
-
