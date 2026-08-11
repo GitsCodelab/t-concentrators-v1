@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Implementation-Title: jpos-a
+Implementation-Version: 1.0.0-SNAPSHOT
+Main-Class: org.jpos.q2.Q2
+Class-Path: lib/jpos-3.0.2-SNAPSHOT.jar lib/snakeyaml-2.6.jar lib/jdbm-1
+ .0.jar lib/je-18.3.12.jar lib/micrometer-registry-prometheus-1.17.0.jar
+  lib/micrometer-core-1.17.0.jar lib/HdrHistogram-2.2.2.jar lib/jdom2-2.
+ 0.6.1.jar lib/javatuples-1.2.jar lib/jline-4.3.1.jar lib/jna-5.19.1.jar
+  lib/jansi-2.4.3.jar lib/bsh-2.0b6.jar lib/bcpg-jdk18on-1.85.jar lib/co
+ mmons-cli-1.11.0.jar lib/jackson-dataformat-xml-2.22.1.jar lib/jackson-
+ datatype-jsr310-2.22.1.jar lib/jackson-databind-2.22.1.jar lib/jackson-
+ core-2.22.1.jar lib/bcutil-jdk18on-1.85.jar lib/bcprov-jdk18on-1.85.jar
+  lib/micrometer-observation-1.17.0.jar lib/micrometer-commons-1.17.0.ja
+ r lib/jspecify-1.0.0.jar lib/prometheus-metrics-core-1.7.0.jar lib/prom
+ etheus-metrics-tracer-common-1.7.0.jar lib/prometheus-metrics-expositio
+ n-formats-1.7.0.jar lib/jackson-annotations-2.22.jar lib/woodstox-core-
+ 7.2.0.jar lib/stax2-api-4.3.0.jar lib/prometheus-metrics-exposition-tex
+ tformats-1.7.0.jar lib/prometheus-metrics-model-1.7.0.jar lib/prometheu
+ s-metrics-config-1.7.0.jar
+

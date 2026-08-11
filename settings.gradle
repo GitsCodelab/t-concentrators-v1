@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        maven { url = uri('https://jpos.org/maven') }
+    }
+}
+
+rootProject.name = 'concentrators-v1'
+
+include 'jpos-a'
+include 'jpos-b'
