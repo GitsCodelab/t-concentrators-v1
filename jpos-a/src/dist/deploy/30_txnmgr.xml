@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<txnmgr name="txnmgr" logger="Q2">
+
+    <property name="queue" value="TXN"/>
+    <property name="sessions" value="1"/>
+    <property name="persistent-space" value=""/>
+
+    <participant
+        class="com.taly.concentrators.transaction.RoutingParticipant"
+        logger="Q2"
+        realm="routing"/>
+
+</txnmgr>
